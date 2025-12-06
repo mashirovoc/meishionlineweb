@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const PrivacyPolicy = () => {
   return (
     <>
@@ -8,14 +10,12 @@ const PrivacyPolicy = () => {
         <p className="mb-4">
           <strong>最終更新日:</strong> 2025年12月7日
         </p>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">1. はじめに</h3>
           <p className="text-muted-foreground">
             本プライバシーポリシーは、「名刺Online」（以下、「本アプリ」といいます）が収集する情報とその利用方法について説明するものです。本アプリをご利用いただく前に、本ポリシーをご確認いただき、内容にご同意いただいた上でご利用ください。
           </p>
         </section>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">2. 収集する情報</h3>
           <p className="text-muted-foreground mb-4">
@@ -50,7 +50,6 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
         </section>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">3. 情報の利用目的</h3>
           <p className="text-muted-foreground mb-4">
@@ -64,7 +63,6 @@ const PrivacyPolicy = () => {
             <li>お問い合わせへの対応のため。</li>
           </ul>
         </section>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">4. 第三者への情報提供</h3>
           <p className="text-muted-foreground mb-4">
@@ -89,14 +87,12 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
         </section>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">5. データの削除</h3>
           <p className="text-muted-foreground">
             ユーザーは、本アプリのアカウント削除機能を利用することで、サーバーに保存されたご自身のプロフィール情報および登録した名刺データを削除することができます。
           </p>
         </section>
-
         <section className="mb-8">
           <h3 className="text-xl font-semibold mb-2">
             6. プライバシーポリシーの変更
@@ -104,6 +100,38 @@ const PrivacyPolicy = () => {
           <p className="text-muted-foreground">
             本ポリシーは、法令の変更やサービスの改善に伴い、改定されることがあります。重要な変更がある場合は、本サイト内でお知らせします。
           </p>
+        </section>{" "}
+        <section>
+          <h3 className="text-xl font-semibold mb-2">8. お問い合わせ</h3>
+          <p className="text-muted-foreground mb-4">
+            本ポリシーに関するご質問、または利用者情報の取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。
+          </p>
+
+          <div className="space-y-4 text-muted-foreground">
+            <div>
+              <p className="font-bold text-foreground">メールアドレス</p>
+              <a
+                href="mailto:app@mashiro3.com"
+                className="text-primary underline hover:opacity-80"
+              >
+                app@mashiro3.com
+              </a>
+            </div>
+
+            <div>
+              <p className="font-bold text-foreground">公式コミュニティ</p>
+              <p>「ましろ㌠」公式Discordサーバー（返信が早いです）</p>
+
+              <Link
+                to="https://discord.gg/e36y4zTbPm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline hover:opacity-80"
+              >
+                サーバーに参加する
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
     </>
