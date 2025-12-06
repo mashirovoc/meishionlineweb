@@ -11,8 +11,9 @@ const Header = () => {
         </div>
       </Link>
       <nav>
-        <Button asChild>
-          <Link to="YOUR_APP_STORE_LINK_HERE">アプリをダウンロード</Link>
+        <Button asChild disabled>
+          {/* <Link to="YOUR_APP_STORE_LINK_HERE">アプリをダウンロード</Link> */}
+          <div>アプリは準備中です</div>
         </Button>
       </nav>
     </header>

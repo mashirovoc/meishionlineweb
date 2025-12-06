@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Contact, ScanLine, Share2 } from "lucide-react";
-import { Link } from "react-router";
 
 const FeatureCard = ({
   icon: Icon,
@@ -66,8 +65,9 @@ const TopPage = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <Button size="lg" className="font-bold">
-              <Link to="YOUR_APP_STORE_LINK_HERE">無料でアプリを試す</Link>
+            <Button size="lg" className="font-bold" disabled>
+              {/* <Link to="YOUR_APP_STORE_LINK_HERE">無料でアプリを試す</Link> */}
+              アプリは準備中です
             </Button>
           </motion.div>
         </motion.section>
