@@ -75,14 +75,14 @@ const PrivacyPolicy = () => {
               <strong>広告配信:</strong> 本アプリでは、Google
               AdMobを利用して広告を配信しています。Google
               AdMobは、広告IDを使用してユーザーに適した広告を表示することがあります。Googleによるデータの利用については、
-              <a
-                href="https://policies.google.com/technologies/ads"
+              <Link
+                to="https://policies.google.com/technologies/ads"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary underline"
               >
                 Googleのポリシーと規約
-              </a>
+              </Link>
               をご確認ください。
             </li>
           </ul>
@@ -100,7 +100,7 @@ const PrivacyPolicy = () => {
           <p className="text-muted-foreground">
             本ポリシーは、法令の変更やサービスの改善に伴い、改定されることがあります。重要な変更がある場合は、本サイト内でお知らせします。
           </p>
-        </section>{" "}
+        </section>
         <section>
           <h3 className="text-xl font-semibold mb-2">8. お問い合わせ</h3>
           <p className="text-muted-foreground mb-4">
@@ -110,12 +110,12 @@ const PrivacyPolicy = () => {
           <div className="space-y-4 text-muted-foreground">
             <div>
               <p className="font-bold text-foreground">メールアドレス</p>
-              <a
-                href="mailto:app@mashiro3.com"
+              <Link
+                to="mailto:app@mashiro3.com"
                 className="text-primary underline hover:opacity-80"
               >
                 app@mashiro3.com
-              </a>
+              </Link>
             </div>
 
             <div>
